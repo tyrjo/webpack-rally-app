@@ -1,6 +1,6 @@
 # ES6+ Agile Central App Development
 
-A simple port of the Dave Thomas BasicRallyGrid sample application into a Webpack environment.
+A simple port of the Dave Thomas [BasicRallyGrid sample application](https://help.rallydev.com/intro-build-apps-videos) into a Webpack environment.
 
 ## Features
 * ES6+ transpiling: Use ES6, 7, etc syntax in your Javascript (modules, classes, destructuring, etc).
@@ -14,6 +14,6 @@ A simple port of the Dave Thomas BasicRallyGrid sample application into a Webpac
 * `yarn` (or `npm install`)
 
 ## Usage
-* `npm start`: launch a development server, and open the application in a web browser
-* `npm run build`: create the `dist` directory and the production files that can be used for an application (currently unminified)
-* `npm run lint:fix`: Automatically fix any 'fixable' ESLint errors like indenting and trailing commas
+* `npm start` - launch a development server, and open the application in a web browser
+* `npm run build` - create the `dist` directory and the production files that can be used for an application (currently unminified)
+* `npm run lint:fix` - Automatically fix any 'fixable' ESLint errors like indenting and trailing commas

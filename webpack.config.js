@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -31,6 +33,12 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      inlineSource: '.(js|css)$', // embed all javascript and css inline
+      inject: true,
+      template: 'src/index.ejs',
+    }),
+    new HtmlWebpackInlineSourcePlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
   ],
 };

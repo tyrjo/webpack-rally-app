@@ -6,5 +6,8 @@
     "globals": {
         "Ext": false,
         "Rally": false
+    },
+    "rules": {
+        "no-underscore-dangle": "warn"
     }
 }

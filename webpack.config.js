@@ -25,8 +25,9 @@ module.exports = {
     compress: true,
     overlay: {
       errors: true,
-      warnigns: true,
+      warnings: false,
     },
+    headers: { 'Access-Control-Allow-Origin': '*' },
   },
   devtool: 'inline-source-map',
   plugins: [

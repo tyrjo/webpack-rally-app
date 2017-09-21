@@ -1,5 +1,5 @@
-import './CustomApp';
+import './App';
 
-Rally.launchApp('CustomApp', {
+Rally.launchApp('App', {
   name: 'Sample App',
 });

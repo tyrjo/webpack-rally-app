@@ -17,7 +17,6 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      inject: true,
       template: 'src/index.ejs',
     }),
     new webpack.HotModuleReplacementPlugin(),

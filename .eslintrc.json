@@ -9,6 +9,7 @@
         "Rally": false
     },
     "rules": {
-        "no-underscore-dangle": "warn"
+        "no-underscore-dangle": "warn",
+        "import/prefer-default-export": "warn"
     }
 }

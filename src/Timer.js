@@ -1,12 +1,9 @@
-// Moment adds 247kb...
-import moment from 'moment';
-
 const Timer = class {
   constructor() {
     this.onStart = this.onStart.bind(this);
     this.onInterval = this.onInterval.bind(this);
     this.getTimeLabel = this.getTimeLabel.bind(this);
-    this.remainingTime = moment.duration(5, 'seconds');
+    this.remainingTime = 10;
   }
 
   onStart() {
@@ -16,28 +13,26 @@ const Timer = class {
     });
   }
 
+  onStop() {
+    Ext.TaskManager.stop(this.intervalTask);
+  }
+
   onInterval() {
-    this.remainingTime.subtract(1, 'second');
-    // TODO (tj)
-    // This is starting to be bad, convert component to explicitly create EXT objects so this class
-    // can retain a reference.
-    this.timeDisplayEl = Ext.ComponentQuery.query('#time-display');
-    this.timeDisplayEl.update(this.getTimeLabel());
-    if (this.remainingTime.asSeconds() <= 0) {
+    this.remainingTime -= 1;
+    this.timeDisplayEl.setText(this.getTimeLabel());
+    if (this.remainingTime <= 0) {
       Ext.TaskManager.stop(this.intervalTask);
     }
   }
 
   getTimeLabel() {
-    return `${this.remainingTime.minutes()}:${this.remainingTime.seconds()}`;
+    return `${this.remainingTime}`;
   }
 
   render() {
-    const timeDisplay = {
-      xtype: 'label',
-      itemId: 'time-display',
-      html: this.getTimeLabel(),
-    };
+    this.timeDisplayEl = Ext.create('Ext.draw.Text', {
+      text: this.getTimeLabel(),
+    });
     const startButton = {
       xtype: 'button',
       text: 'Start',
@@ -49,13 +44,13 @@ const Timer = class {
       xtype: 'button',
       text: 'Stop',
       listeners: {
-        click: () => { },
+        click: () => { this.onStop(); },
       },
     };
     const timer = {
       xtype: 'panel',
       items: [
-        timeDisplay,
+        this.timeDisplayEl,
         startButton,
         stopButton,
       ],

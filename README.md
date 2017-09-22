@@ -6,6 +6,7 @@ A simple port of the Dave Thomas [BasicRallyGrid sample application](https://hel
 * ES6+ transpiling: Use ES6, 7, etc syntax in your Javascript (modules, classes, destructuring, etc).
 * Hot-reloading: Changes in source are automatically reflected in your browser.
 * ESLint: Uses the widely used AirBnB lint rules (without the React goo)
+* [AVA](https://github.com/avajs/ava): Concurrent, ES6 test runner
 
 ## Setup
 * `git clone https://github.com/tyrjo/webpack-rally-app.git`

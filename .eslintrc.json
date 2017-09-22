@@ -10,7 +10,11 @@
     },
     "rules": {
         "no-underscore-dangle": "warn",
-        "import/prefer-default-export": "warn",
-        "comma-dangle": "off"
+        "import/prefer-default-export": "off",
+        "comma-dangle": "off",
+        "arrow-spacing": "off",
+        "eol-last": "off",
+        "arrow-parens": "off",
+        "no-param-reassign": "off"
     }
 }

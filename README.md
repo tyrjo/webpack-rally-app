@@ -7,6 +7,7 @@ A simple port of the Dave Thomas [BasicRallyGrid sample application](https://hel
 * Hot-reloading: Changes in source are automatically reflected in your browser.
 * ESLint: Uses the widely used AirBnB lint rules (without the React goo)
 * [AVA](https://github.com/avajs/ava): Concurrent, ES6 test runner
+   * no in-browser support (see [Setting up AVA for browser testing](https://github.com/avajs/ava/blob/master/docs/recipes/browser-testing.md))
 
 ## Setup
 * `git clone https://github.com/tyrjo/webpack-rally-app.git`
@@ -19,3 +20,6 @@ A simple port of the Dave Thomas [BasicRallyGrid sample application](https://hel
 * `npm run build` - create the `dist` directory and the production files that can be used for an application (currently unminified)
 * `npm run lint:fix` - Automatically fix any 'fixable' ESLint errors like indenting and trailing commas
 * `npm run test:watch` - Watch for changes and retest
+
+## Questions
+* how to unit test SDK code?

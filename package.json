@@ -37,10 +37,15 @@
   },
   "dependencies": {},
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "ava": {
-    "babel": "inherit",
-    "verbose": true
+    "verbose": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }

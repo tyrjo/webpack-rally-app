@@ -18,3 +18,4 @@ A simple port of the Dave Thomas [BasicRallyGrid sample application](https://hel
 * `npm start` - launch a development server, and open the application in a web browser
 * `npm run build` - create the `dist` directory and the production files that can be used for an application (currently unminified)
 * `npm run lint:fix` - Automatically fix any 'fixable' ESLint errors like indenting and trailing commas
+* `npm run test:watch` - Watch for changes and retest

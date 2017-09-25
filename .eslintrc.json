@@ -15,6 +15,10 @@
         "arrow-spacing": "off",
         "eol-last": "off",
         "arrow-parens": "off",
-        "no-param-reassign": "off"
+        "no-param-reassign": "off",
+        "padded-blocks": "off",
+        "no-trailing-spaces": "off",
+        "space-in-parens": "off",
+        "no-unused-vars": "warn"
     }
 }

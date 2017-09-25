@@ -10,9 +10,6 @@ const LABEL_PAUSE = 'Pause';
 const LABEL_RESUME = 'Resume';
 
 const Timer = class {
-  constructor() {
-    this.init();
-  }
 
   init() {
     this.remainingTime = 65;
@@ -27,6 +24,7 @@ const Timer = class {
       run: () => { this.onInterval(); },
       interval: 1000,
     });
+    return this;
   }
 
   onStart() {

@@ -33,7 +33,9 @@
     "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "agile-central-time-formatter": "^1.0.1"
+  },
   "babel": {
     "presets": [
       "env"

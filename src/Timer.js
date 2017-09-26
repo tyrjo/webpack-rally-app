@@ -1,4 +1,4 @@
-import { asMinutesSeconds } from './util/Time';
+import asMinutesSeconds from '@agile-central-technical-services/time-formatter';
 
 const STATE_STOPPED = 'STATE_STOPPED';
 const STATE_RUNNING = 'STATE_RUNNING';

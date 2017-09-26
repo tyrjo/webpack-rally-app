@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@agile-central-technical-services/time-formatter@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@agile-central-technical-services/time-formatter/-/time-formatter-0.0.4.tgz#8644c1eeb6e46c154974ef479566b9b4ff7c6630"
+
 "@ava/babel-plugin-throws-helper@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@ava/babel-plugin-throws-helper/-/babel-plugin-throws-helper-2.0.0.tgz#2fc1fe3c211a71071a4eca7b8f7af5842cd1ae7c"
